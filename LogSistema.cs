@@ -20,7 +20,13 @@ namespace NETCLog
         {
             objLog.LogSuceso(tipoLog, titulo, mensaje);
         }
-
+        /// <summary>
+        /// Registra un log en el sistema
+        /// </summary>
+        /// <param name="tipoLog"></param>
+        /// <param name="titulo"></param>
+        /// <param name="mensaje"></param>
+        /// <param name="stackTrace"></param>
         public void Log(TipoLog tipoLog, string titulo, string mensaje, StackTrace stackTrace)
         {
             objLog.LogSuceso(tipoLog, titulo, mensaje, stackTrace);
